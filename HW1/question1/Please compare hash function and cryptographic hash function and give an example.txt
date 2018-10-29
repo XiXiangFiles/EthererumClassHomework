@@ -1,0 +1,6 @@
+﻿hash function : 指的是利用許多的buckets 使資料分散到各個bucket的方式，其主要依靠演算法去分散。
+				並且會有collsion 等問題，使得各個bucket可能會有多個元素。
+				○ ex : hash Serarch 在每個bucket中各個元素都是以linklist串連，故比傳統的
+				Binery Search 可能來的更快O(log n)的O(n) n 為Bucket數量。
+
+cryptographic hash function : 指的是Hash function 是套加密演算法，○ ex : sha3 等，以分散Bucket
