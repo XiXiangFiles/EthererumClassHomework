@@ -85,7 +85,7 @@ contract Bank {
             
         // require owner 的 coinBalance 不小於 value
         // your code
-        require (balance[owner] <= value, "ur account is not enough");
+        require (coinBalance[owner] >= value, "ur account is not enough");
         // require msg.sender 的 etherBalance 不小於 value
         // your code
         require (balance[msg.sender] >= value , "ur account is not enough");
