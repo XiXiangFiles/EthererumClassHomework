@@ -12,7 +12,7 @@ web3.eth.getAccounts().then(function (accounts) {
 
     // accounts[0] transfer 1 * 10**18 coins to accounts[2]
     // your code
-	bank.methods.transferCoin(accounts[2],10).send({
+	bank.methods.transferCoin(accounts[2],1).send({
 		from:accounts[0],
 		gas:3000000
 	}).on('receipt',function(recv){
